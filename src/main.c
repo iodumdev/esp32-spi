@@ -24,7 +24,7 @@
 #include "esp_event.h"
 #include "nvs_flash.h"
 #include "soc/rtc_periph.h"
-#include "driver/spi_slave.h"
+#include <spi_slave.h>
 #include "esp_log.h"
 #include "esp_spi_flash.h"
 #include "driver/gpio.h"
@@ -91,7 +91,6 @@ void my_post_trans_cb(spi_slave_transaction_t *trans) {
 //Main application
 void app_main(void)
 {
-    int n=0;
     esp_err_t ret;
 
     //Configuration for the SPI bus
