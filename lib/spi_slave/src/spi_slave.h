@@ -19,7 +19,7 @@
 #include "esp_err.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
-#include <spi_common.h>
+#include "driver/spi_common.h"
 
 
 #ifdef __cplusplus
